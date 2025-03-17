@@ -1,3 +1,8 @@
 body{
     background-color: rgb(149, 189, 176);
 }
+
+h1{
+    text-align: center;
+    color: red;
+}
