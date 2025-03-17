@@ -2,26 +2,54 @@ section{
     display: flex;
    justify-content: center;
    margin-top: 20%;
-   
+     
 }
     .bloc1 {  
         width: 100px;  
         height: 100px;  
-        background-color: aquamarine;  
+        background-color: darkblue;  
         margin: 10px; 
         box-shadow: 2px 2px 3px 2px black;
     }
+   
     .bloc2 {  
         width: 100px;  
         height: 100px;  
-        background-color: wheat;  
+        background-color: darkblue;  
         margin: 10px; 
         box-shadow: 2px 2px 3px 2px black; 
     }
+   
     .bloc3 {  
         width: 100px;  
         height: 100px;  
-        background-color: gold;  
+        background-color: darkblue;  
         margin: 10px;  
         box-shadow: 2px 2px 3px 2px black;
-    }    
+    }
+     
+
+     span {   
+        position: absolute;
+        width: 50px;  
+        height: 100px;  
+        background-color: rgb(67, 47, 73);  
+        margin: 10px;  
+        border: solid 1px black;
+        border-radius: 50%;
+        box-shadow: 2px 2px 3px 2px rgb(0, 0, 0);
+        visibility: hidden; /* Masquer le span par défaut */  
+        transition: left 0.3s ease;  
+    }  
+    
+    .bloc1:hover ~ span {  
+        margin-right: 20%;
+        visibility: visible; /* Rendre le span visible au survol */  
+    }  
+    
+    .bloc2:hover ~ span {  
+        margin-right: 1%;
+        visibility: visible; /* Rendre le span visible au survol */  
+    }  
+    
+    
